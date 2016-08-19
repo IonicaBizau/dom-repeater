@@ -36,5 +36,10 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/dom-repeater/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/dom-repeater#readme"
+  "homepage": "https://github.com/IonicaBizau/dom-repeater#readme",
+  "dependencies": {
+    "elly": "^1.0.0",
+    "mustache": "^2.2.1",
+    "typpy": "^2.3.3"
+  }
 }
