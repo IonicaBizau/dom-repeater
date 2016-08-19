@@ -41,5 +41,9 @@
     "elly": "^1.1.0",
     "mustache": "^2.2.1",
     "typpy": "^2.3.3"
+  },
+  "blah": {
+      "h_img": "http://i.imgur.com/T5HouUH.png",
+      "h_url": "http://ionicabizau.github.io/dom-repeater/example"
   }
 }
