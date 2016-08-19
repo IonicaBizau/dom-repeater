@@ -10,7 +10,7 @@
     "easily"
   ],
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/IonicaBizau/dom-repeater#readme",
   "dependencies": {
-    "elly": "^1.0.0",
+    "elly": "^1.1.0",
     "mustache": "^2.2.1",
     "typpy": "^2.3.3"
   }
