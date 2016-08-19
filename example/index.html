@@ -2,17 +2,67 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
-        <title>Repeater</title>
+        <title>DOM Repeater</title>
         <script type="text/javascript" src="../dist/repeater.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack/0.6.0/hack.css">
     </head>
-    <body>
-        <select data-repeater="container">
-            <option data-repeater="item" value="{{value}}">{{text}}</option>
-        </select>
-        <ul data-repeater="container">
-            <li data-repeater="item">{{{text}}}</li>
-        </ul>
-        <script type="text/javascript" src="index.js">
-        </script>
+    <body class="hack">
+        <div class="container">
+            <h1>DOM Repeater</h1>
+            <p>Here is an example how to use the DOM Repeater library. The following lists are rendered. <a href="https://github.com/IonicaBizau/dom-repeater">Check out the documentation and source code on GitHub</a>.</p>
+            <div>
+                <p>
+                    My favorite fruits are
+                    <select data-repeater="container">
+                        <option data-repeater="item" value="{{value}}">{{text}}s</option>
+                    </select>.
+                </p>
+                <p>
+                    Also, I like these:
+                    <ul data-repeater="container">
+                        <li data-repeater="item">
+                            <label>
+                                <input type="checkbox"> {{text}}s
+                            </label>
+                        </option>
+                    </ul>
+                </p>
+            </div>
+            <pre>&lt;div&gt;
+    &lt;p&gt;
+        My favorite fruits are
+        &lt;select data-repeater="container"&gt;
+            &lt;option data-repeater="item" value="{{value}}"&gt;{{text}}s&lt;/option&gt;
+        &lt;/select&gt;.
+    &lt;/p&gt;
+    &lt;p&gt;
+        Also, I like these:
+        &lt;ul data-repeater="container"&gt;
+            &lt;li data-repeater="item"&gt;
+                &lt;label&gt;
+                    &lt;input type="checkbox"&gt; {{text}}s
+                &lt;/label&gt;
+            &lt;/option&gt;
+        &lt;/ul&gt;
+    &lt;/p&gt;
+&lt;/div&gt;
+&lt;script&gt;
+    domRepeater([
+        { value: 0, text: "apple" }
+      , { value: 1, text: "pear" }
+      , { value: 2, text: "orange" }
+      , { value: 3, text: "lemon" }
+    ]);
+&lt;/script&gt;</pre>
+            <script>
+                domRepeater([
+                    { value: 0, text: "apple" }
+                  , { value: 1, text: "pear" }
+                  , { value: 2, text: "orange" }
+                  , { value: 3, text: "lemon" }
+                ]);
+            </script>
+        </div>
     </body>
 </html>
+
