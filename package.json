@@ -10,7 +10,7 @@
     "easily"
   ],
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -43,7 +43,7 @@
     "typpy": "^2.3.3"
   },
   "blah": {
-      "h_img": "http://i.imgur.com/T5HouUH.png",
-      "h_url": "http://ionicabizau.github.io/dom-repeater/example"
+    "h_img": "http://i.imgur.com/T5HouUH.png",
+    "h_url": "http://ionicabizau.github.io/dom-repeater/example"
   }
 }
