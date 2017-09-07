@@ -9,6 +9,7 @@ The `DOMRepeater.renderer` is an object containing the `render` function.
 You can override the `renderer` object with a different renderer. By default, `mustache` is used.
 
 #### Params
+
 - **HTMLElement|String** `container`: The HTML Element or the selector as a string.
 - **HTMLElement|String** `item`: The HTML Element to use as template or the selector (default: the element with `data-repeater='item'` attribute in the container).
 
@@ -19,6 +20,7 @@ You can override the `renderer` object with a different renderer. By default, `m
 Renders one item.
 
 #### Params
+
 - **Object** `cData`: The data to render.
 - **Number** `index`: The current index.
 
@@ -29,6 +31,7 @@ Renders one item.
 Renders the data array.
 
 #### Params
+
 - **Array** `data`: The data to render (an array of objects).
 
 ### `domRepeater(sel, data)`
@@ -55,6 +58,7 @@ domRepeater(".my-selector", [
 ```
 
 #### Params
+
 - **HTMLElement|String** `sel`: The selector or HTML element.
 - **Array** `data`: The data array.
 
